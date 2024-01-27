@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>название страницы</title>
+    <title>В И Н Н Е Р</title>
 </head>
 <body>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
 <IMG SRC="logo.jpg" width=5%>
 
 <body bgcolor=#aa00aa MARGINWIDTH=0 MARGINHEIGHT=0 link=#FFFFFF alink=#FFFFFF 
@@ -108,7 +109,7 @@ BODY {
 <a href="mino.html" target="witch">ღღღМЕНО БАСОВღღღ</a><BR>
 <a href="jinu.html" target="witch">ღღღВОВА ПЕГАСОВღღღ</a><BR>
 <a href="snhn.html" target="witch">Ли Сынхун.</a><br>
-<a href="youtube.html" rel="noopener noreferrer">ღღღღღღღНаш канал на ютубе!!!ღ</a><BR>
+<a href="https://www.youtube.com/" rel="noopener noreferrer">ღღღღღღღНаш канал на ютубе!!!ღ</a><BR>
 <a href="https://vk.com/russian.winner">ღღღНаша группа вконтактеღღღ</a><BR>
 <a href="https://ficbook.net/readfic/018c984c-1ef2-78d6-b1cb-dc67b5539807">ღღღЛюбимые ссылкиღღღ</a><BR>
 <a href="eda.html" target="witch">ღღღНакормить Нам Тэхёна!ღღღ</a><BR>
@@ -124,6 +125,7 @@ BODY {
 <img src="otteo.gif">
 <img src="son.gif">
 <img src="winner.gif"><br>
+<font color=ee00ee size=100 face="comic sans ms"><i>Авторы сайта: Сашко 1996 рус, Рин 2002 бур </i></font><br>
 <font color=ee00ee size=100 face="comic sans ms"><i>Пока!!!</i></font>
 
 
@@ -176,4 +178,24 @@ setTimeout("flake()", 60);
 }
 flake();
 </script>
+
+<!---------------заголовок печатается------------->
+<script type="text/javascript">
+var title_mess = document.title;
+var pos = 0;
+
+function write_title() {
+ document.title = title_mess.substring(0, pos);
+ if(pos==title_mess.length) {
+    pos = 0;
+    setTimeout("write_title()", 2000);
+ }
+ else {
+    pos++;
+    setTimeout("write_title()", 200);
+ }
+}
+write_title();
+</script>
+
 </html>
