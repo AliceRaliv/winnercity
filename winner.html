@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>название страницы</title>
+</head>
+<body>
+<IMG SRC="logo.jpg" width=5%>
+
+<body bgcolor=#aa00aa MARGINWIDTH=0 MARGINHEIGHT=0 link=#FFFFFF alink=#FFFFFF 
+vlink=#FFFFFF>
+<link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/snow.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script>
+<script>
+	new Snow ();
+</script>
+
+
+
+
+<div style="FILTER: chroma (color=#ff00ff);
+ position: absolute; left: 840px; top: 533px; width: 130px; text-align: center; height: 70px; overflow: auto">
+
+
+
+
+
+
+
+</CENTER>
+
+
+
+
+
+
+
+  </marquee></center>
+
+</tr>
+</div></div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+
+BODY {
+  scrollbar-face-color: #aa00aa;
+  scrollbar-highlight-color: #0000ff;
+  scrollbar-3dlight-color: #990099;
+  scrollbar-darkshadow-color: #777777;
+  scrollbar-shadow-color: #d7c57e;
+  scrollbar-arrow-color: #d7c57e;
+  scrollbar-track-color: #fffbb2;
+  font-family: 'comic sans ms', 'Verdana', sans-serif;
+
+}
+
+</style>
+
+</div></div>
+
+
+
+
+
+
+<div id="Layer1" style="position:absolute; left:225px; top:296px; z-index:1">
+<!---<IFRAME border=0 name=witch src="https://vk.com/club20378489" width=570 height=295 scroll="YES"></IFRAME>--->
+<iframe name=witch src="snhn.html" width="570" height="295" align="left">
+    Ваш браузер не поддерживает плавающие фреймы!
+ </iframe>
+
+</div>
+
+
+<div style="FILTER: chroma (color=#ff00ff); position: absolute; left: 840px; top: 555px; width: 130px; text-align:
+ center;
+ height: 40px; overflow: auto">
+
+
+
+
+</div></div></div>
+
+
+
+<br>
+<br>
+<br>
+<font size=4 color="#FF00FF">МЕНО:</font><br>
+<a href="svin.html" target="witch">ღღღКАН СЫНЮНღღღ</a><br>
+<a href="tae.gif" target="witch">ღღღНАМ ТЭХЁНღღღ</a><BR>
+<a href="mino.html" target="witch">ღღღМЕНО БАСОВღღღ</a><BR>
+<a href="jinu.html" target="witch">ღღღВОВА ПЕГАСОВღღღ</a><BR>
+<a href="snhn.html" target="witch">Ли Сынхун.</a><br>
+<a href="youtube.html" rel="noopener noreferrer">ღღღღღღღНаш канал на ютубе!!!ღ</a><BR>
+<a href="https://vk.com/russian.winner">ღღღНаша группа вконтактеღღღ</a><BR>
+<a href="https://ficbook.net/readfic/018c984c-1ef2-78d6-b1cb-dc67b5539807">ღღღЛюбимые ссылкиღღღ</a><BR>
+<a href="eda.html" target="witch">ღღღНакормить Нам Тэхёна!ღღღ</a><BR>
+<a href="vragi.html" target="witch">ВРАГИ САЙТА</a><BR>
+
+
+
+</CENTER>
+
+
+</div>
+
+<img src="otteo.gif">
+<img src="son.gif">
+<img src="winner.gif"><br>
+<font color=ee00ee size=100 face="comic sans ms"><i>Пока!!!</i></font>
+
+
+
+
+</div></div>
+</body>
+<script src="snow.js"></script>
+<script type="text/javascript">
+var imgsrc = "sneg.png";
+var height = document.body.scrollHeight;
+if (height<document.body.clientHeight) height = document.body.clientHeight;
+var width = document.body.scrollWidth;
+var col = Math.round(height/25);    //количество снежинок
+
+var amp = new Array();
+var x_pos = new Array();
+var y_pos = new Array();
+var stx = new Array();
+var sty = new Array();
+var deltax = new Array();
+var obj = new Array();
+
+for (i=0; i<col; ++i) {
+ amp[i] = Math.random()*19;
+ x_pos[i] = Math.random()*(width-amp[i]-29);
+ y_pos[i] = Math.random()*height;
+ stx[i] = 0.03 + Math.random()*0.25;
+ sty[i] = 2 + Math.random();
+ deltax[i] = 0;
+
+ document.write("<img id=\"sn"+ i +"\" style=\"position: absolute; " +
+ "z-index: 50; top: -50px; left: -50px;\" src='" + imgsrc + "'>");
+
+ obj[i] = document.getElementById("sn" + i);
+}
+
+function flake() {
+ for (i=0; i<col; ++i) {
+    y_pos[i] += sty[i];
+    if (y_pos[i]>height-49) {
+        x_pos[i] = Math.random()*(width-amp[i]-29);
+        y_pos[i] = 0;
+    }
+    deltax[i] += stx[i];
+    obj[i].style.top = y_pos[i] + "px";
+    obj[i].style.left = x_pos[i] + amp[i]*Math.sin(deltax[i]) + "px";
+ }
+setTimeout("flake()", 60);
+}
+flake();
+</script>
+</html>
